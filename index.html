@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flag Guessing Game</title>
+    <link rel="icon" href="imgs/IOPT+world.jpg" type="worldicon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Guess the Country!</h1>
+        <div class="card p-4 mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <img id="country-flag" class="img-fluid border rounded" alt="Country Flag" />
+            </div>
+
+            <div class="mb-3">
+                <input type="text" id="guess" class="form-control" placeholder="Type your guess...">
+            </div>
+
+            <div class="d-grid gap-2">
+                <button id="submitGuess" class="btn btn-success">Submit Guess</button>
+            </div>
+
+            <div id="empty-error" class="text-danger mt-2"></div>
+            <div id="result" class="text-info mt-2"></div>
+
+            <div class="score-container mt-3">
+                <span class="fw-bold">Score: <span id="user-score-val">0</span></span>
+                <span class="fw-bold ms-3">Wrong Guesses: <span id="wrong-guesses-val">0</span></span>
+                <span class="fw-bold ms-3">High Score: <span id="high-score-val">0</span></span> 
+            </div>
+
+            <button id="nextBtn" class="btn btn-primary mt-4">Next Country</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

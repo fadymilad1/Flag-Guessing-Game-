@@ -1,0 +1,35 @@
+#country-flag {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.score-container {
+    margin-top: 20px;
+}
+
+.error-message, .result-message {
+    font-size: 1rem;
+}
+
+body {
+    background-image: url('imgs/world\ map2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transition: background-color 0.3s ease;
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.7);
+}
